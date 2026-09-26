@@ -1,0 +1,14 @@
+node_modules
+.env
+.env.*
+!.env.example
+
+# Hardhat
+cache
+artifacts
+typechain-types
+coverage
+coverage.json
+
+# Local deployments (hardhat / localhost)
+deployments/*.local.json

@@ -1,0 +1,38 @@
+{
+  "name": "farmz-contracts",
+  "version": "0.1.0",
+  "description": "FarmZ ERC-20 token and signature-based FarmZClaim contracts (Hardhat, Base)",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "clean": "hardhat clean",
+    "typecheck": "tsc --noEmit",
+    "deploy:local": "hardhat run scripts/deploy.ts",
+    "deploy:base-sepolia": "hardhat run scripts/deploy.ts --network baseSepolia",
+    "verify:base-sepolia": "hardhat run scripts/verify.ts --network baseSepolia"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fxstreet28-TH/farmz-contracts.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fxstreet28-TH/farmz-contracts/issues"
+  },
+  "homepage": "https://github.com/fxstreet28-TH/farmz-contracts#readme",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@types/chai": "^4.3.20",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^26.6.3",
+    "dotenv": "^18.0.4",
+    "hardhat": "^2.29.1",
+    "solc": "0.8.24",
+    "ts-node": "^10.9.2",
+    "typescript": "~5.8"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.6.1"
+  },
+  "private": true
+}
